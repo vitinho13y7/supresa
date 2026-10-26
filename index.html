@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#050208">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Amor em Constelação · Vitor &amp; Meu Amor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cormorant+SC:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Italianno&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="arte.css">
+</head>
+<body>
+
+  <canvas id="starCanvas" aria-hidden="true"></canvas>
+
+  <header class="cosmic-header">
+    <div class="cosmic-header-inner">
+      <a href="#hero" class="cosmic-logo">
+        <div class="cosmic-logo-mark">V</div>
+        <div class="cosmic-logo-text">
+          <span class="top">Amor em Constelação</span>
+          <span class="bottom">Vitor &amp; Meu Amor</span>
+        </div>
+      </a>
+
+      <nav class="cosmic-nav">
+        <a href="#hero">Início</a>
+        <a href="#contador">Tempo</a>
+        <a href="#galeria">Memórias</a>
+        <a href="#motivos">Motivos</a>
+        <a href="#carta">Carta</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="wishBtn" class="cosmic-wish-btn" title="Fazer um pedido às estrelas">
+          ✦ <span>Desejo</span>
+        </button>
+        <button id="mobileMenuBtn" class="cosmic-menu-btn" aria-label="Abrir menu">Menu</button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="cosmic-mobile-nav">
+      <div class="grid">
+        <a href="#hero" class="nav-item">Início</a>
+        <a href="#contador" class="nav-item">Tempo</a>
+        <a href="#galeria" class="nav-item">Memórias</a>
+        <a href="#motivos" class="nav-item">Motivos</a>
+        <a href="#carta" class="nav-item">Carta</a>
+      </div>
+      <div class="mobile-menu-footer">
+        <span>Para sempre juntos</span>
+        <span class="gold-text">♥ 28 de Novembro</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero-cosmic">
+      <canvas id="heartCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero-content">
+        <div class="hero-kicker">
+          <span class="line"></span>
+          <span>1 Ano de Amor · 28 de Novembro</span>
+          <span class="line"></span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="script-line">Nossa</span>
+          <span class="caps-line">Eterna História</span>
+        </h1>
+
+        <div class="hero-names">
+          <span>Vitor</span>
+          <span class="star">✦</span>
+          <span>Meu Amor</span>
+        </div>
+
+        <p class="hero-sub">
+          "365 dias de amor puro. Milhares de memórias inesquecíveis. Uma única constelação
+          escrita no céu e guardada para sempre no coração."
+        </p>
+
+        <div class="hero-cta-wrapper">
+          <div class="hero-cta">
+            <span class="pulse-dot"></span>
+            <span>Toque na tela · acenda as estrelas</span>
+          </div>
+        </div>
+
+        <div class="hero-proof-pills">
+          <span>365 Dias Juntos</span>
+          <span>✦</span>
+          <span>8.760 Horas de Cumplicidade</span>
+          <span>✦</span>
+          <span>Amor Infinito</span>
+        </div>
+      </div>
+
+      <a href="#contador" class="hero-scroll-hint" aria-label="Rolar para o contador">
+        <span>Tempo</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 10l5 5 5-5"/>
+        </svg>
+      </a>
+    </section>
+
+    <section id="contador" class="cosmic-section">
+      <div class="cosmic-section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Linha do Tempo</div>
+          <h2 class="section-title">O <span class="accent">Tempo</span> Bordado em Luz</h2>
+          <p class="section-sub">
+            Cada segundo compartilhado desde o dia 28 de novembro de 2025 — eternizado como uma estrela cintilante no nosso firmamento.
+          </p>
+        </div>
+
+        <div class="anniversary-banner">
+          <div class="banner-kicker">✦ Nosso Primeiro Aniversário · 28 de Novembro ✦</div>
+          <h3 class="banner-title">✨ 1 Ano de Amor Oficialmente Celebrado! ✨</h3>
+          <p class="banner-desc">
+            Hoje celebramos 365 dias de amor, cumplicidade e felicidade. Um ano inteiro ao seu lado e a certeza absoluta de que este é apenas o começo da nossa eternidade.
+          </p>
+        </div>
+
+        <div class="counter-grid">
+          <div class="counter-cell">
+            <div id="c-years" class="counter-num">01</div>
+            <div class="counter-label">Anos</div>
+          </div>
+          <div class="counter-cell">
+            <div id="c-months" class="counter-num">00</div>
+            <div class="counter-label">Meses</div>
+          </div>
+          <div class="counter-cell">
+            <div id="c-days" class="counter-num">00</div>
+            <div class="counter-label">Dias</div>
+          </div>
+          <div class="counter-cell">
+            <div id="c-hours" class="counter-num">00</div>
+            <div class="counter-label">Horas</div>
+          </div>
+          <div class="counter-cell">
+            <div id="c-minutes" class="counter-num">00</div>
+            <div class="counter-label">Minutos</div>
+          </div>
+          <div class="counter-cell highlight">
+            <div id="c-seconds" class="counter-num">00</div>
+            <div class="counter-label">Segundos</div>
+          </div>
+        </div>
+
+        <div class="counter-extras">
+          <div class="counter-extra">
+            <div class="counter-extra-icon">♥</div>
+            <div class="counter-extra-text">
+              <div class="counter-extra-label">Batimentos em Sincronia</div>
+              <div id="c-heartbeats" class="counter-extra-value">78.840.000</div>
+            </div>
+          </div>
+
+          <div class="counter-extra">
+            <div class="counter-extra-icon">✦</div>
+            <div class="counter-extra-text">
+              <div class="counter-extra-label">Dias Catalogados</div>
+              <div class="counter-extra-value"><span id="c-totaldays">365</span> dias</div>
+            </div>
+          </div>
+
+          <div class="counter-extra">
+            <div class="counter-extra-icon">⌛</div>
+            <div class="counter-extra-text">
+              <div class="counter-extra-label">Horas de Cumplicidade</div>
+              <div id="c-totalhours" class="counter-extra-value">8.760 horas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="cosmic-section">
+      <div class="cosmic-section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Nossas Memórias</div>
+          <h2 class="section-title">Cada <span class="accent">Estrela</span> é uma Memória</h2>
+          <p class="section-sub">
+            Fotografias capturadas como pontos de luz — fragmentos do nosso céu que o tempo jamais poderá apagar.
+          </p>
+        </div>
+
+        <div id="galleryContainer" class="gallery-grid"></div>
+
+        <div class="section-header" style="margin-top: 70px;">
+          <div class="section-kicker">Nossos Momentos</div>
+          <h2 class="section-title">Vídeos <span class="accent">em Movimento</span></h2>
+          <p class="section-sub">
+            Pequenos filmes da nossa história — para reviver os momentos exatamente como aconteceram.
+          </p>
+        </div>
+        <div id="videoContainer" class="video-grid"></div>
+
+      </div>
+    </section>
+
+    <section id="motivos" class="cosmic-section">
+      <div class="cosmic-section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Por Que Te Amo</div>
+          <h2 class="section-title">Motivos <span class="accent">Infinitos</span></h2>
+          <p class="section-sub">
+            Toque para revelar uma nova estrela — cada uma guarda uma das razões pelas quais meu coração te escolhe a cada novo dia.
+          </p>
+        </div>
+
+        <div class="reason-card">
+          <div class="reason-header">
+            <span id="reasonIndex" class="reason-index">Estrela nº 01 / 20</span>
+            <button id="favoriteBtn" class="fav-btn" onclick="toggleCurrentFavorite()">
+              <span id="favHeartIcon">♥</span> <span id="favLabel">Favoritar</span>
+            </button>
+          </div>
+
+          <div class="reason-quote-wrap">
+            <blockquote id="reasonText" class="reason-text">
+              "O jeito como seus olhos brilham quando você sorri de verdade"
+            </blockquote>
+          </div>
+
+          <div class="reason-actions">
+            <button onclick="prevReason()" class="nav-reason-btn" aria-label="Motivo anterior">‹</button>
+            <button onclick="nextReason()" class="reason-btn">
+              ✦ Revelar outra estrela
+            </button>
+            <button onclick="nextReason()" class="nav-reason-btn" aria-label="Próximo motivo">›</button>
+          </div>
+
+          <div class="view-all-wrap">
+            <button onclick="openAllReasonsModal()" class="view-all-btn">
+              Ver todas as 20 estrelas
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="carta" class="cosmic-section">
+      <div class="cosmic-section-inner">
+        <div class="section-header">
+          <div class="section-kicker">Relíquia Final</div>
+          <h2 class="section-title">A Carta <span class="accent">Eterna</span></h2>
+          <p class="section-sub">
+            Guardada para todo o sempre entre as estrelas — uma declaração de amor e gratidão eterna.
+          </p>
+        </div>
+
+        <div class="letter-wrap">
+          <div class="letter-frame">
+            <div class="letter-paper">
+              <div class="letter-header">
+                <span class="letter-header-script">Com amor infinito</span>
+                <span class="letter-header-ref">Carta XI · 28 de Novembro</span>
+              </div>
+
+              <div id="letterContent" class="letter-body"></div>
+
+              <div class="letter-signature">
+                <p id="signatureText">Com todo o meu coração, Vitor ❦</p>
+              </div>
+
+              <div class="letter-actions-bar">
+                <button id="copyLetterBtn" onclick="copyLetter()" class="letter-btn">
+                  <span id="copyIcon">📋</span> <span id="copyLabel">Copiar Carta</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="letter-seal" onclick="burstSeal()" title="Selo de Vitor">
+            <span>V</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="cosmic-footer">
+    <div class="cosmic-footer-inner">
+      <div class="cosmic-footer-seal" onclick="window.scrollTo({top:0, behavior:'smooth'})" title="Voltar ao início">
+        ❦
+      </div>
+      <h3 class="cosmic-footer-title">Amor em Constelação</h3>
+      <p class="cosmic-footer-script">"Para sempre juntos em cada batimento"</p>
+      <div class="cosmic-footer-meta">
+        <span>12 Meses</span>
+        <span class="dot">·</span>
+        <span>365 Dias</span>
+        <span class="dot">·</span>
+        <span>8.760 Horas</span>
+        <span class="dot">·</span>
+        <span class="gold-text">∞ Amor</span>
+      </div>
+      <div class="made-with-love">
+        Feito com ♥ para celebrar a nossa história
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-bar" aria-label="Navegação rápida">
+    <div class="bar-inner">
+      <a href="#hero" class="bar-link active" data-sec="hero">
+        <span class="icon">✦</span>
+        <span class="label">Início</span>
+      </a>
+      <a href="#contador" class="bar-link" data-sec="contador">
+        <span class="icon">⌛</span>
+        <span class="label">Tempo</span>
+      </a>
+      <a href="#galeria" class="bar-link" data-sec="galeria">
+        <span class="icon">🖼️</span>
+        <span class="label">Fotos</span>
+      </a>
+      <a href="#motivos" class="bar-link" data-sec="motivos">
+        <span class="icon">💬</span>
+        <span class="label">Motivos</span>
+      </a>
+      <a href="#carta" class="bar-link" data-sec="carta">
+        <span class="icon">✉️</span>
+        <span class="label">Carta</span>
+      </a>
+    </div>
+  </nav>
+
+  <div id="photoLightbox" class="lightbox-overlay" onclick="closeLightbox(event)">
+    <div class="lightbox-modal">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fechar">✕</button>
+      <button class="lightbox-nav prev" onclick="prevLightbox(event)" aria-label="Foto anterior">‹</button>
+      <button class="lightbox-nav next" onclick="nextLightbox(event)" aria-label="Próxima foto">›</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="Foto expandida">
+      </div>
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle"></h4>
+        <div id="lightboxMeta"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="allReasonsModal" class="lightbox-overlay" onclick="closeAllReasonsModal(event)">
+    <div class="reasons-modal-card">
+      <div class="modal-header">
+        <div>
+          <h3>Nossas 20 Estrelas</h3>
+          <p>Cada uma é uma promessa de carinho eterno</p>
+        </div>
+        <button class="lightbox-close" onclick="closeAllReasonsModal()">✕</button>
+      </div>
+      <div id="reasonsList" class="reasons-list"></div>
+    </div>
+  </div>
+
+  <div id="wishModal" class="lightbox-overlay" onclick="closeWishModal(event)">
+    <div class="wish-modal-card">
+      <div class="modal-header">
+        <div>
+          <h3>✦ Desejos às Estrelas ✦</h3>
+          <p>Envie um desejo para o nosso futuro juntos</p>
+        </div>
+        <button class="lightbox-close" onclick="closeWishModal()">✕</button>
+      </div>
+
+      <form onsubmit="handleWishSubmit(event)" class="wish-form">
+        <div class="author-select-row">
+          <label for="wishAuthor">Quem está desejando:</label>
+          <select id="wishAuthor">
+            <option value="Vitor">Vitor</option>
+            <option value="Meu Amor">Meu Amor</option>
+            <option value="Nós Dois">Nós Dois</option>
+          </select>
+        </div>
+        <textarea id="wishInput" rows="3" placeholder="Escreva o que você deseja para a nossa vida a dois..."></textarea>
+        <button type="submit" class="wish-send-btn">✦ Lançar ao Céu Noturno ✦</button>
+      </form>
+
+      <div class="wishes-list-container">
+        <div class="wishes-title">Constelação de Desejos</div>
+        <div id="wishesList" class="wishes-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="arte.js"></script>
+</body>
+</html>
