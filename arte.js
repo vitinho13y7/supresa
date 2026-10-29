@@ -28,10 +28,10 @@
     { nome: "Foto 12", url: "imagens/11.jpg", caption: "Colo que Acolhe",                   date: "Domingo à Tarde",        likes: 331 },
     { nome: "Foto 13", url: "imagens/12.jpg", caption: "Sempre Juntos",                     date: "Nosso Dia",              likes: 256 },
     { nome: "Foto 14", url: "imagens/13.jpg", caption: "Para Todo o Sempre",                date: "Nosso Futuro",           likes: 402 },
-    { nome: "Foto 15", url: "imagens/14.jpg", caption: "Sob a Nossa Própria Galáxia",       date: "28 de Novembro de 2025", likes: 184 },
-    { nome: "Foto 16", url: "imagens/15.jpg", caption: "O Abraço que Silencia o Mundo",     date: "Céu Estrelado",          likes: 195 },
-    { nome: "Foto 17", url: "imagens/16.jpg", caption: "O Beijo que Para o Tempo",          date: "Noite Inesquecível",     likes: 340 },
-    { nome: "Foto 18", url: "imagens/17.jpg", caption: "Para Todo o Sempre",                date: "Nosso Futuro",           likes: 358 },
+    { nome: "Foto 15", url: "imagens/14.JPG", caption: "Sob a Nossa Própria Galáxia",       date: "28 de Novembro de 2025", likes: 184 },
+    { nome: "Foto 16", url: "imagens/15.JPG", caption: "O Abraço que Silencia o Mundo",     date: "Céu Estrelado",          likes: 195 },
+    { nome: "Foto 17", url: "imagens/16.JPG", caption: "O Beijo que Para o Tempo",          date: "Noite Inesquecível",     likes: 340 },
+    { nome: "Foto 18", url: "imagens/17.JPG", caption: "Para Todo o Sempre",                date: "Nosso Futuro",           likes: 358 },
     { nome: "Foto 19", url: "imagens/18.jpg", caption: "Nosso Abraço na Cidade",            date: "Noite Inesquecível",     likes: 358 },
     { nome: "Foto 20", url: "imagens/20.jpg", caption: "Para Todo o Sempre",                date: "Nosso Futuro",           likes: 358 },
     { nome: "Foto 21", url: "imagens/21.jpg", caption: "Para Todo o Sempre",                date: "Nosso Futuro",           likes: 358 },
@@ -41,7 +41,7 @@
   
     videos: [
       { nome: "Vídeo 1", url: "video/1.mp4", caption: "Nossa Música Favorita", date: "Momentos em Movimento", likes: 450 },
-      { nome: "Vídeo 2", url: "video/2.mov", caption: "Rindo Juntos",          date: "Tarde Divertida",        likes: 380 },
+      { nome: "Vídeo 2", url: "video/2.MOV", caption: "Rindo Juntos",          date: "Tarde Divertida",        likes: 380 },
       { nome: "Vídeo 3", url: "video/3.mp4", caption: "Nossos roles",          date: "Tarde Divertida",        likes: 380 }
     ],
   
